@@ -20,7 +20,7 @@ This Python script monitors specified websites for changes and generates an HTML
 ## Installation
 
 1. Clone this repository:
-   ```
+   ```cmd
    git clone https://github.com/kelvinq0xff/website-change-detector.git
    cd website-change-detector
    ```
