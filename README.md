@@ -20,13 +20,13 @@ This Python script monitors specified websites for changes and generates an HTML
 ## Installation
 
 1. Clone this repository:
-   ```
+   ```cmd
    git clone https://github.com/kelvinq0xff/website-change-detector.git
    cd website-change-detector
    ```
 
 2. Install the required packages:
-   ```
+   ```cmd
    pip install selenium==4.23.1 redlines==0.4.2
    ```
 
@@ -37,7 +37,7 @@ This Python script monitors specified websites for changes and generates an HTML
 1. Create a text file named `urls.txt` in the same directory as the script, with one URL per line.
 
 2. Run the script:
-   ```
+   ```cmd
    python website-change-detector.py
    ```
 
@@ -46,7 +46,7 @@ This Python script monitors specified websites for changes and generates an HTML
    - `--wait`: Set the wait time in seconds for loading website content (default: 10)
 
    Example with custom arguments:
-   ```
+   ```cmd
    python website-change-detector.py --file my_urls.txt --wait 15
    ```
 
