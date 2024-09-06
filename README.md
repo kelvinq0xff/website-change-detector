@@ -52,25 +52,11 @@ This Python script monitors specified websites for changes and generates an HTML
 
 3. The script will generate an HTML report named `result-YYYY-MM-DD.html` in the same directory, showing any detected changes.
 
-## How it works
-
-1. The script reads URLs from the specified input file.
-2. For each URL, it:
-   - Loads the website using Selenium WebDriver in headless mode
-   - Compares the current content with the previously saved content
-   - If changes are detected, it highlights the differences and updates the HTML report
-   - Saves the new content for future comparisons
-
 ## Output
 
 The generated HTML report includes:
 - Links to the checked websites
 - Highlighted text showing additions and deletions
-
-## Notes
-
-- The script creates a `website_log` directory to store the latest version of each checked website's content.
-- Ensure you have the necessary permissions to read from and write to the script's directory.
 
 ## Author
 

@@ -16,6 +16,8 @@ args = parser.parse_args()
 assert args.file in os.listdir('.')
 assert args.wait >= 0
 
+first = 'website_log' not in os.listdir('.') or len(os.listdir('website_log')) == 0
+
 def check_website(driver, url, wait):
     driver.get(url)
     t.sleep(wait)
@@ -69,4 +71,9 @@ for i, url in enumerate(URLS):
 
 result.write('</div>')
 result.close()
+
+if first:
+    with open(f'result-{dt.date.today()}.html', 'w', encoding='utf-8') as f:
+        f.write('''<h1 style="font-family: Consolas">First time to run the program. No change detected.</h1>''')
+
 driver.quit()
